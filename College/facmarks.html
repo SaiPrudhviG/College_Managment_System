@@ -1,0 +1,60 @@
+<html>    
+    <head>    
+        <title>Registration Form</title>    
+    </head>   
+	<style>
+.container {  
+  max-width: 1350px;  
+  width: 100%;  
+  margin: 50px;  
+  height: auto;  
+  display: block;  
+}  
+  
+body {  
+  color: #8A2BE2;  
+  font-size: 20px;  
+  font-family: Verdana, Arial, Helvetica, monospace;  
+  background-color: #F0E8A0;  
+}  
+  
+h2 {  
+  text-align: center;  
+}  
+  
+.form_group {  
+  padding: 10px;  
+  ;    
+display: block;  
+}  
+  
+label {  
+  float: left;  
+  padding-right: 50px;  
+  line-height: 10%;  
+  display: block;  
+  width: 208px;  
+}  	
+</style>
+    <body>    
+        <link href = "registration.css" type = "text/css" rel = "stylesheet" />    
+        <h2>Marks</h2>    
+        <form name = "form1" action="facmarks.php" method = "post"  >    
+            <div class = "container">    
+                <div class = "form_group">    
+				  <label for="email"><b>Student Name </b></label></br></br>
+    <input type="text" placeholder="Enter Student Name" name="stuname" required></br></br>
+    <label for="psw"><b>First Year Marks</b></label></br></br>
+    <input type="text" placeholder="Enter First year marks" name="1" required></br></br>
+	<label for="email"><b>Second Year  </b></label></br></br>
+    <input type="text" placeholder="Enter Second year Marks" name="2" required></br></br>
+    <label for="psw"><b>Third Year Marks</b></label></br></br>
+    <input type="text" placeholder="Enter third year marks" name="3" required></br></br>
+<label for="email"><b>Fourth Year Marks </b></label></br></br>
+    <input type="text" placeholder="Enter Fourth Year Marks" name="4" required></br></br>
+	<button>Send Notification</button><br><br>				
+                </div>     
+            </div>    
+        </form>    
+    </body>    
+</html>    

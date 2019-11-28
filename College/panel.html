@@ -1,0 +1,135 @@
+<html>
+<head><title>panel</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f4f7f7;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #5990ea;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 22%;
+    border-radius: 40%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+<ul><li><a href="hmpage.html" class="active">Home</a></li>    
+						<li><a href="panel.html" class="scroll">Student Login</a></li> 
+<li><a href="registration.html" class="scroll">Student Registration</a></li>
+<li><a href="facultyr.html" class="scroll">Faculty Registration</a></li>						
+						<li><a href="facultyl.html" class="scroll">Faculty Login</a></li>    
+						<li><a href="Adminl.html" class="scroll">Admin Login</a></li>    	
+					<li><a href="examl.html" class="scroll">Exam Center Login</a></li>
+					</ul>
+<!-- <marquee behaviour=alternate bgcolor=rgb(9, 228, 239) height=40px scrollamount="8" > <font-size="7">Welcome You all Users!</font></marquee>  -->
+    <section class="container">
+<div class="left-half">
+        
+     </div>
+    <div class="right-half">
+        <form class="register" action="login.php" method="post">
+	<div class="imgcontainer">
+    <img src="Student.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+    <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+  </div>
+        
+        </form>
+        </div>
+   
+ 
+      </section>
+</body>
+</html>
